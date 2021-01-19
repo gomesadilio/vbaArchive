@@ -29,22 +29,22 @@ Sub get_data_from_table( _
     Set rst = CreateObject("ADODB.Recordset")
     
     If Not VBA.InStr(1, sql, "$") Then
-    
-    'Excel 2013+ provider
-    cnn.Provider = "Microsoft.ACE.OLEDB.12.0"
-    
-    'Workbook full name
-    cnn.ConnectionString = "Data Source=" & dsn
-    
-    cnn.Properties("Extended Properties") = "Excel 12.0 Xml;HDR=YES"
-    
+
+        'Excel 2013+ provider
+        cnn.Provider = "Microsoft.ACE.OLEDB.12.0"
+
+        'Workbook full name
+        cnn.ConnectionString = "Data Source=" & dsn
+
+        cnn.Properties("Extended Properties") = "Excel 12.0 Xml;HDR=YES"
+
     Else
-    
-    'ODBC for sql server sgbd
-    cnn.ConnectionString = _
-        "DSN=   " & dsn & "; DRIVER=Client Access ODBC Driver (32-bit); " & _
-        "UID =  " & uid & ";" & _
-        "PWD = " & pwd
+
+        'ODBC for sql server sgbd
+        cnn.ConnectionString = _
+            "DSN=   " & dsn & "; DRIVER=Client Access ODBC Driver (32-bit); " & _
+            "UID =  " & uid & ";" & _
+            "PWD = " & pwd
     
     End If
     
