@@ -1,24 +1,24 @@
-Attribute VB_Name = "mdl_SendMailFromOutllok"
+Attribute VB_Name = "mdl_SendMailFromOutlook"
 Option Explicit
 
 Option Private Module
 
 '---------------------------------------------------------------------------------------
-' Autor.....: ADILIO GOMES
-' Contato...: gomesadilio@outlook.com
-' Data......: 25/01/2021
-' Descricao.: Send mail from outlook with signature
+' By..........: SILVA, ADILIO
+' Contact.....: gomesadilio@outlook.com
+' Date........: 1/1/2021
+' Description.: Send mail from outlook with signature, attachments, image, hyperlink
 '---------------------------------------------------------------------------------------
 
 
 Sub send_outlook_mail_with_signature()
        
-    Dim objOutlook As Object        'Dim objOutlook As Outlook.Application
-    Dim objMessage As Object        'Dim objMessage As Outlook.MailItem
-    Dim htmlText As String
+    Dim objOutlook 			As Object        				'Dim objOutlook As Outlook.Application
+    Dim objMessage 			As Object        				'Dim objMessage As Outlook.MailItem
+    Dim htmlText 			As String
     
-    Set objOutlook = CreateObject("Outlook.Application")    'New Outlook.Application
-    Set objMessage = objOutlook.CreateItem(0)               'olMailItem
+    Set objOutlook = CreateObject("Outlook.Application")    	'New Outlook.Application	
+    Set objMessage = objOutlook.CreateItem(0)               	'olMailItem
     
     With objMessage
         
@@ -27,7 +27,9 @@ Sub send_outlook_mail_with_signature()
         'Remittee
         .To = "<somebody@mymail.com>; "
         
-        .cc = "<people@mymail.com>; "
+        .CC = "<people@mymail.com>; "
+		
+		.BCC = "<anotherpeople@mymail.com>; "
        
         .Subject = "Reports - " & VBA.Format$(Now, "dd/mm/yy")
         
@@ -52,3 +54,4 @@ Sub send_outlook_mail_with_signature()
     Set objOutlook = Nothing
     
 End Sub
+                     
