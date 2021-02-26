@@ -28,9 +28,9 @@ Sub SentDataToAccess()
 
 	If MsgBox("Agree?", vbYesNo + vbExclamation) <> vbYes Then Exit Sub
   
-    Dim rst             As Object  
+    Dim rst             	As Object  
 	Dim cnn 				As Object
-    Dim sql             As String
+    Dim sql             	As String
 	Dim strProvider 		As String
 	Dim strDatabase 		As String
 
