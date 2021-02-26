@@ -41,6 +41,7 @@ Sub send_outlook_mail_with_signature()
             "<h3 font-family:'Segoe UI', Calibri, Arial, Helvetica;>" & _
             "<a color: blue; href='" & ThisWorkbook.FullName & "'>" & _
             "Click to open file!</a></h3>" & _
+            "<img src='" & "C:\Users\MyUser\Desktop\MyImage.jpeg" & "' width ='1200' ><br><br>" & _                            
             "</p></body></html>"
             
         .HTMLBody = htmlText & .HTMLBody
