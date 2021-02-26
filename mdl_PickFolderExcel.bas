@@ -36,8 +36,8 @@ Public Function PickFolderExcel() As String
 		.InitialFileName = "Z:\MyFolder\"
         
 		If .Show = -1 Then ' if OK is pressed
-            pickFolder = .SelectedItems(1)
-        End If
+			pickFolder = .SelectedItems(1)
+		End If
 		
     End With
    
