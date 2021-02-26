@@ -36,7 +36,7 @@ Sub get_data_from_table( _
         'Workbook full name
         cnn.ConnectionString = "Data Source=" & dsn
 
-        cnn.Properties("Extended Properties") = "Excel 12.0 Xml;HDR=YES"
+        'cnn.Properties("Extended Properties") = "Excel 12.0 Xml;HDR=YES"
 
     Else
 
