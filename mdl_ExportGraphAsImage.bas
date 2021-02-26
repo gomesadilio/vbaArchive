@@ -1,4 +1,4 @@
-Attribute VB_Name = "mdl_ExportGraph"
+Attribute VB_Name = "mdl_ExportGraphAsImage"
 Option Explicit
 
 Option Private Module
