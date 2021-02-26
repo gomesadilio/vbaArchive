@@ -1,4 +1,4 @@
-Attribute VB_Name = "mld_Mail"
+Attribute VB_Name = "mdl_SendMailFromOutllok"
 Option Explicit
 
 Option Private Module
