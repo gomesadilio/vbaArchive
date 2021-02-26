@@ -7,7 +7,7 @@ Option Private Module
 ' By..........: SILVA, ADILIO
 ' Contact.....: gomesadilio@outlook.com
 ' Date........: 1/1/2021
-' Description.: INSERT into full data
+' Description.: INSERT INTO full data
 '---------------------------------------------------------------------------------------
 
 '                         .
