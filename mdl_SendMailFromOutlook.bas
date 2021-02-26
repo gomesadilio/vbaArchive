@@ -29,7 +29,7 @@ Sub send_outlook_mail_with_signature()
         
         .CC = "<people@mymail.com>; "
 		
-		.BCC = "<anotherpeople@mymail.com>; "
+	.BCC = "<anotherpeople@mymail.com>; "
        
         .Subject = "Reports - " & VBA.Format$(Now, "dd/mm/yy")
         
